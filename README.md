@@ -1,4 +1,4 @@
-# Passion🌄
+# 🌄Passion
 
 ![MIT](https://poser.pugx.org/flarum/core/license.svg) [![思源笔记](https://img.shields.io/badge/思源-笔记-d23f31.svg)](https://github.com/siyuan-note/siyuan)
 
