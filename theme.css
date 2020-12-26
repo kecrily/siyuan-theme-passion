@@ -1,0 +1,213 @@
+:root {
+  /* 主色 */
+  --b3-theme-primary: #4285f4;
+  --b3-theme-primary-light: rgba(66, 133, 244, 0.54);
+  --b3-theme-primary-lighter: rgba(66, 133, 244, 0.38);
+  --b3-theme-primary-lightest: rgba(66, 133, 244, 0.12);
+  --b3-theme-secondary: #f3a92f;
+  --b3-theme-background: #f8f9fa;
+  --b3-theme-surface: #f3f3f3;
+  --b3-theme-error: #d23f31;
+
+  /* 文字颜色 */
+  --b3-theme-on-primary: #fff;
+  --b3-theme-on-secondary: #fff;
+  --b3-theme-on-background: #444;
+  --b3-theme-on-surface: #666666;
+  --b3-theme-on-error: #fff;
+
+  /* 字体 */
+  --b3-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --b3-font-family-code: "SFMono-Regular", Consolas, "Liberation Mono", Menlo,
+    Courier, monospace;
+
+  /* 线条 */
+  --b3-border-color: #e5e5e5;
+
+  /* 滚动条 */
+  --b3-scroll-color: rgba(0, 0, 0, 0.3);
+
+  /* 列表 */
+  --b3-list-hover: rgba(0, 0, 0, 0.06);
+
+  /* 页签 */
+  --b3-tab-background: #f8f9fa;
+  --b3-tab-background-hover: #e9eaeb;
+
+  /* 提示 */
+  --b3-tooltips-color: rgba(0, 0, 0, 0.54);
+
+  /* 动画效果 */
+  --b3-transition: all 0.15s cubic-bezier(0, 0, 0.2, 1) 0ms;
+
+  /* 阴影 */
+  --b3-point-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  --b3-dialog-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),
+    0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+
+  /* diff */
+  --b3-diff-add: #dfd;
+  --b3-diff-add-surface: #97f295;
+  --b3-diff-del: #fee8e9;
+  --b3-diff-del-surface: #ffb6ba;
+
+  /* 图表颜色 */
+  --b3-graph-point: #202124;
+  --b3-graph-line: #5f6368;
+  --b3-graph-hl-point: #f3a92f;
+  --b3-graph-hl-line: #d23f31;
+
+  /* 编辑器工具栏高度 */
+  --b3-vditor-toolbar-height: 29px;
+  --b3-vditor-toolbar-height-space: 6px;
+
+  /* 编辑器搜索颜色 */
+  --b3-vditor-search-background: #ffe955;
+  --b3-vditor-search-border-color: #f2e680;
+  --b3-vditor-search-current-background: #a5d3fe;
+
+  /* 代码片段背景 */
+  --b3-vditor-code-background: rgba(27, 31, 35, 0.05);
+
+  /* 即时渲染标记符颜色 */
+  --b3-vditor-mark-heading-color: #660e7a;
+  --b3-vditor-mark-title-color: #808080;
+  --b3-vditor-mark-em-color: #0033b3;
+  --b3-vditor-mark-strong-color: #0033b3;
+  --b3-vditor-mark-backslash-color: #0033b3;
+  --b3-vditor-mark-s-color: #5f6368;
+  --b3-vditor-mark-mark-color: #5f6368;
+  --b3-vditor-mark-link-color: #008000;
+  --b3-vditor-mark-bracket-color: #0000ff;
+  --b3-vditor-mark-paren-color: #008000;
+  --b3-vditor-mark-block-color: #660e7a;
+  --b3-vditor-mark-tag-color: #0033b3;
+
+  /* 即时渲染行内元素颜色 */
+  --b3-vditor-inline-strong-color: #202124;
+  --b3-vditor-inline-em-color: #202124;
+  --b3-vditor-inline-s-color: #202124;
+  --b3-vditor-inline-link-color: #0366d6;
+  --b3-vditor-inline-mark-background: #ffe955;
+  --b3-vditor-inline-mark-color: #202124;
+  --b3-vditor-inline-tag-color: #5f6368;
+  --b3-vditor-inline-blockref-color: #06e;
+}
+
+.language-graphviz polygon {
+  fill: transparent;
+}
+
+/* 侧栏 */
+.b3-list--background .b3-list-item--focus {
+  color: var(--b3-vditor-inline-blockref-color);
+  background-color: var(--b3-vditor-search-current-background) !important;
+  border-radius: 0 15px 15px 0;
+}
+
+.b3-list-item__graphic {
+  margin-right: 6px;
+  flex-shrink: 0;
+  height: 16px;
+  width: 16px;
+}
+
+.b3-list-item {
+  line-height: 30px;
+  padding: 4px 16px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  position: relative;
+  background-color: transparent;
+  text-align: left;
+  border: 0px;
+  border-radius: 0 15px 15px 0;
+  color: var(--b3-theme-on-background);
+}
+
+.b3-list-item {
+  line-height: 30px;
+  padding: 4px 16px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  position: relative;
+  background-color: transparent;
+  text-align: left;
+  border: 0;
+  color: var(--b3-theme-on-background);
+}
+
+/* 编辑 */
+
+.vditor-reset h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.2em;
+  border-bottom: 1px solid var(--b3-border-color);
+}
+
+.vditor-reset h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.6em;
+  border-bottom: 1px solid var(--b3-border-color);
+}
+
+.vditor-reset h3 {
+  font-size: 1.4em;
+}
+
+.vditor-reset h4 {
+  font-size: 1.2em;
+}
+
+.vditor-reset h5 {
+  font-size: 1em;
+}
+
+.vditor-reset h6 {
+  font-size: 0.9em;
+  color: #6a737d;
+}
+
+.vditor-ir__link {
+  color: var(--b3-vditor-inline-link-color);
+  text-decoration: none;
+}
+
+.vditor-ir__link:hover {
+  color: var(--b3-vditor-inline-blockref-color);
+  text-decoration: underline;
+}
+
+.vditor-reset hr {
+  height: 2px;
+  padding: 0;
+  margin: 15px 0;
+  background-color: var(--b3-border-color);
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+}
+
+.vditor-reset mark {
+  border-radius: 3px;
+  background-color: var(--b3-vditor-inline-mark-background);
+  color: var(--b3-vditor-inline-mark-color);
+}
+
+/* 设置 */
+
+.b3-text-filed,
+.pcr-app .pcr-interaction .pcr-result {
+  border: 1px solid var(--b3-theme-on-surface);
+  border-radius: 15px;
+  padding: 6px 8px;
+  line-height: 20px;
+  box-sizing: border-box;
+  color: var(--b3-theme-on-background);
+  transition: border-color 120ms 0ms cubic-bezier(0, 0, 0.2, 1),
+    box-shadow 120ms 0ms cubic-bezier(0, 0, 0.2, 1);
+  background-color: var(--b3-theme-background);
+}
